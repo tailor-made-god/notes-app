@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <h1>My Notes</h1>
+      <form id="myform">
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Write your note here..."
+        />
+        <input type="text" name="tag" id="tag" placeholder="Tag: Work" />
+        <button type="submit">Add Note</button>
+      </form>
+
+      <input type="search" name="search" id="search" />
+      <div class="note-show" id="note-show">
+        <div class="s-showing" id="s-showing"></div>
+        <template id="template">
+          <div class="n-container">
+            <h3 class="n-title"></h3>
+            <p class="n-description"></p>
+            <p class="n-tag"></p>
+            <div class="n-control">
+              <p class="n-pin pointer">Pin</p>
+              <p class="n-edit pointer">Edit</p>
+              <p class="n-delete pointer">Delete</p>
+            </div>
+          </div>
+        </template>
+        <div class="n-container">
+          <h3 class="n-title">Client meeting notes</h3>
+          <p class="n-description">
+            Send the final photos by Friday. Ask about the album size.
+          </p>
+          <p class="n-tag">Work</p>
+          <div class="n-control">
+            <p class="n-pin">Pin</p>
+            <p class="n-edit">Edit</p>
+            <p class="n-delete">Delete</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
